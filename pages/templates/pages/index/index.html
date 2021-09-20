@@ -1,0 +1,355 @@
+{% extends 'pages/index/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="site-blocks-cover overlay" id="home" style="background-image: url(../../../static/pages/images/bg3-c.jpg);"
+  data-aos="fade" data-stellar-background-ratio="0.5">
+  <div class="container">
+    <div class="row align-items-center justify-content-center">
+      <div class="col-md-10 text-center" data-aos="fade">
+
+        <h1 class="mb-4"><br>OpenMindsClub Joins Hacktoberfest 2020</h1>
+        <p class="mb-5">October 11-13th, 2020 &bullet; Online</p>
+        <p class="regular-font-size">
+        <p><button type="button" class=" css-18bhpku-close" style="background-color: red;">Registerations Closed</button>
+          <span class="mx-3">or</span>
+          <span><a href="https://github.com/openmindsclub/H4ckT0b3rF3st-2k20" target="_blank" class="text-white"
+              style="font-size: medium;">Check out the repo</a></span>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="site-section" id="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7 mx-auto text-left section-heading">
+        <h2 class="mb-5 text-uppercase">About The Event</h2>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-7">
+        <h3 style="font-size: 24px;">Event Begins In<br><br></h3>
+        <div id="date-countdown" style="text-align: center;"></div>
+        <p>Openfest is a 3-day online event, it will first start with
+          a FOS Talk (+ Event Introduction) as well as a Git/Github Workshop on October 11th, for the beginners who
+          want
+          to learn more
+          about Open Source and how to contribute to Open Source projects. The 12th is when we get back to business with the big Fest!</p>
+        <p>Participants will work with each other to contribute
+          to our Hacktobefest Github repository in the hopes of ending up among the first 50,000 people to
+          complete the
+          challenge and winning DigitalOcean's awesome prizes!</p>
+
+        <div style="text-align: center;">
+          <button type="submit" class=" css-18bhpku pill text-white btn-primary px-4 text-center open-popup"
+            onclick="openPopUp()"><span>&nbsp;&nbsp; Read Code of Conduct &nbsp;&nbsp;</span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="site-block-half d-flex images">
+  <div class="image bg-image" style="background-image: url(../../../static/pages/images/members.jpg);">
+  </div>
+  <div class="image bg-image" style="background-image: url(../../../static/pages/images/polaroids.jpg);">
+  </div>
+</div>
+
+<div class="site-section" id="organizer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 mx-auto text-center mb-5 section-heading">
+        <h2 class="mb-5">Organizer</h2>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+
+      <div class="col-md-6 mx-auto text-center mb-5 section-heading">
+        <img src="{% static 'pages/images/organizer.jpg' %}" width="100%" height="100%" alt="Image" draggable="false" (dragstart)="false;" class="img-fluid unselectable">
+      </div>
+
+      <div class="col-6">
+        <h3>Philosophy</h3>
+        <p>OpenMindsClub is a USTHB scientific club, our goal is to promote collaboration through the
+          mutual sharing of knowledge and the philosophy of Free Open Source among the university
+          students on a smaller scale... and nationally on a larger one.</p><br>
+        <h3>Activities</h3>
+        <p>"That Which Is Not Shared Is Lost," a fundamental ethic which we strive to honor
+          through various events
+          and activities among which is The Install Party, one of our main, dedicated to the gathering
+          of the Open
+          Source community for the traditional GNU/Linux installations, in addition to a collection of
+          conferences,
+          courses, workshops, contests and other activities about Programming, Electronics, Foreign
+          Languages,
+          Photography, Design... and much more, all of which are meticulously prepared by our members
+          throughout
+          the
+          year.</p><br>
+
+           <div style="text-align: center;">
+            <button type="submit" class=" css-18bhpku pill text-white btn-primary px-4 text-center open-popup"><span>&nbsp;&nbsp; Visit Website &nbsp;&nbsp;</span></button>
+          </div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="site-section" id="sponsors">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 mx-auto text-center">
+        <h2>They Trusted Us</h2>
+      </div>
+    </div>
+    <br>
+    <div class="row mb-5">
+      <img src="{% static 'pages/images/logos.jpg' %}" alt="Image" draggable="false" (dragstart)="false;" class="img-fluid unselectable">
+    </div>
+  </div>
+</div>
+
+
+<div class="site-section" id="prizes">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 mx-auto text-center mb-5 section-heading">
+        <h2 class="mb-5 text-center">Prizes</h2>
+      </div>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="">
+        <p class="regular-font-size text-center mb-3">
+          In addition to having lots of fun, you can earn a limited
+          version
+          t-shirt and ton of hacktoberfest swag (Stickers and more!) if you happen to be among the first 50,000
+          participants who successfully
+          complete the challenge!
+          This year in particular, OpenMinds Club is inviting you to participate to our Openfest for chances of winning
+          extra symbolic prizes:</p>
+        <div class="text-center">
+          <p class="border-bottom">Certificate (Signed and stamped by the president of the OpenMindsClub).</p>
+          <p class="border-bottom"> OpenMindsClub Sticker.</p>
+          <p class="border-bottom"> Exclusive "Contributor" Sticker.</p>
+          <p class="border-bottom"> 2 Guaranteed places for a future event, workshop or course of your choice.</p>
+          <p> Github Account Exposure​.</p>
+
+          <p style="font-weight: 1000; margin-top: 2rem; ">Challenges:</p>
+          <p>That is if you succeed to land the first prize in one of our set categories of challenges, namely:</p>
+          <p class="border-bottom"> Brave Benefactor: most number of Pull Requests made to the repo.</p>
+          <p class="border-bottom"> Story Sensation: highest change rate (additions+deletions) to the Open Source Story
+            project.</p>
+          <p class="border-bottom"> Diligent Developer: most number of Pull Requests made to IT-themed projects.</p>
+          <p class="border-bottom"> Erudite Editor: best video montage in the Montage Contest.</p>
+          <p> Logo Looney: best OpenMindsClub's logo redesign in the Redesign Competition.</p>
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="site-block-half d-flex images">
+  <div class="image bg-image" style="background-image: url(../../../static/pages/images/purpose.jpg);">
+  </div>
+  <div class="image bg-image" style="background-image: url(../../../static/pages/images/more-about.jpg);">
+  </div>
+</div>
+
+
+<div class="site-section" id="schedule">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 mx-auto text-center mb-5 section-heading">
+        <h2 class="text-center">Schedule</h2>
+      </div>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="">
+        <p class="regular-font-size text-center mb-3">The tentative program for OpenFest is as
+          follows (all times are local i.e. GMT+1). The event will be a
+          3-day
+          event.</p>
+
+      </div>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="row col-12 justify-content-center">
+        <div class="row col-10 border-top border-bottom">
+          <div class="row" style="margin-top: 2rem; margin-bottom: 2rem;">
+            <div class="col-md-3 mb-3 mb-md-0"><span class="h4">Sunday
+                11th, <br></span><span>10:00
+              </span>&mdash; <span> 11:00</span></div>
+            <div class="col-md-9">
+              <h2>FOS Talk and Event Introduction</h2>
+              <span>Speaker: Lilia Mehamli</span><br><br>
+              <span>Understand Hacktoberfest and how to participate and cease the opportunity to familiarize
+                yourself with Open Source.
+                A Q&A will be held at the end of the session where all inquiries will be answered by the speaker.
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row col-10 border-bottom">
+        <div class="row" style="margin-top: 2rem; margin-bottom: 2rem;">
+          <div class="col-md-3 mb-3 mb-md-0"><span class="h4">Sunday
+              11th, <br></span><span>14:00
+            </span>&mdash; <span> 16:00</span></div>
+          <div class="col-md-9">
+            <h2>Git/Github Workshop</h2>
+            <span>Coach: Racim Righi</span><br><br>
+            <span>Join the hands-on workshop to learn the basics of Git/Github, a powerful tool in the community, to
+              share and
+              collaborate
+              on online
+              projects.</span>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row col-10 border-bottom">
+        <div class="row" style="margin-top: 2rem; margin-bottom: 2rem;">
+          <div class="col-md-3 mb-3 mb-md-0">
+            <span class="h4">Monday 12th-13th, <br></span>
+          </div>
+          <div class="col-md-9">
+            <h2>Open Fest</h2>
+            <span>A fest where participants work together in an atmosphere of
+              collaboration, guided by our
+              maintainers who will help them achieve the challenges and be
+              eligible rank among the first 50,000
+              and
+              win DigitalOcean's and Openmindsclub's special prizes.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="site-section block-15" id="get-involved">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 mx-auto text-center mb-5 section-heading">
+        <h2 class="text-center">Get Involved</h2>
+      </div>
+    </div>
+
+    <div class="slide-one-item owl-carousel" style="cursor:pointer;">
+
+      <div class="row justify-content-center">
+        <div class="testimony text-center col-md-5">
+          <figure>
+            <h3>Everyone Is Welcome!</h3>
+          </figure>
+          <blockquote>
+            <p>Everyone is welcome to Hacktoberfest as the participants, so far, have represented
+              151 countries
+              and thousands of unique skill-sets. Its program welcomes everyone already in the
+              open source software
+              community – and, as a matter of course, anyone interested in diving in!​</p>
+          </blockquote>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="testimony text-center col-md-5">
+          <figure>
+            <h3>How Can I Participate?</h3>
+          </figure>
+          <blockquote>
+            <p>To qualify for the official challenge, you must register on DigitalOcean's official
+              website and then
+              make
+              four pull requests between October 1-31. If you want to participate alongside
+              OpenMindsClub, click on
+              the
+              register button on top and wait for our confirmation
+              e-mail to come during the upcoming days!</p>
+          </blockquote>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="testimony text-center col-md-5">
+          <figure>
+            <h3>I Don't Code, Can I Still Join?</h3>
+          </figure>
+          <blockquote>
+            <p>Of course! We have created many projects that you can contribute to whether you are a
+              programmer or
+              not!
+              But if you want to learn more about Open Source and how to participate, we recommend
+              you join the us on
+              the first day of the event and attend both FOS Talk and the Git/Github Workshop.</p>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="popup" style="font-family: 'Inter', sans-serif; z-index: 10000;" id="PopUp">
+  <div action="/action_page.php" class="popup-container">
+
+    <h1>Code of Conduct</h1>
+
+    <div class="scroll"
+      style="text-justify: auto; color: rgb(102, 102, 102); font-size: medium; font-family: Arial, Helvetica, sans-serif;">
+      <p>Harassment includes offensive verbal comments related to gender, gender identity and expression, age,
+        sexual
+        orientation, disability, physical appearance, body size, race, ethnicity, religion, technology choices,
+        sexual
+        images in public spaces, deliberate intimidation, stalking, following, harassing photography or recording,
+        sustained disruption of talks or other events, inappropriate physical contact, and unwelcome sexual
+        attention.
+      </p>
+
+      <p>Participants asked to stop any harassing behavior are expected to comply immediately.</p>
+
+      <p>Sponsors are also subject to the anti-harassment policy. In particular, sponsors should not use sexualized
+        images, activities, or other material. Sponsor staff (including volunteers) should not use sexualised
+        clothing/uniforms/costumes, or otherwise create a sexualized environment.
+      </p>
+      <p>If a participant engages in harassing behavior, the event organizers or DigitalOcean staff may take any
+        action
+        they deem appropriate, including warning the offender or expulsion from the event with no refund.
+      </p>
+      <p>If you are being harassed, notice that someone else is being harassed, or have any other concerns, please
+        contact a member of the organizing team immediately. If you have concerns about a member of the organizing
+        team,
+        please email hacktoberfestevents@digitalocean.com.
+      </p>
+      <p>Any reports of harassment can be reported to hacktoberfestevents@digtialocean.com wherein event staff will
+        assist with removing the event and organizer from the Hacktoberfest app.
+      </p>
+      <p>We value your attendance. We expect participants to follow these rules at all Hacktoberfest related event
+        venues, online and offline.
+      </p>
+    </div>
+
+  <br>
+
+    <div class="text-center">
+      <button type="button" class=" css-18bhpku-close" style="background-color: red;"
+      onclick="closePopUp()">Close</button>
+    </div>
+  </div>
+</div>
+{% endblock %}
